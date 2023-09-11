@@ -132,6 +132,17 @@ local plugins = {
         require "custom.configs.lspconfig"
      end,
   },
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      pickers = {
+        buffers = {
+            ignore_current_buffer = true,
+            sort_lastused = true,
+        },
+      },
+    }
+  }
 }
 
 return plugins
